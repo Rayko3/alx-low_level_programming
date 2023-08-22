@@ -38,7 +38,6 @@ int _atoi(char *s)
 	{
 		numb = (numb * 10) + s[l];
 		l++;
-		p++;
 	}
 	return (k * numb);
 }
