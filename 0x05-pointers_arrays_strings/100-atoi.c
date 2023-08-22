@@ -6,38 +6,32 @@
  *Return: the integer
  */
 
+
 int _atoi(char *s)
 {
-	int k = 1;
-	int i = 0;
-	int j;
-	int l = 0;
-	int numb = 0;
+	int i;
+	int h, p;
 
-	while (s[i] != '\0')
+	h = 0;
+	p = -1;
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		i++;
-	}
+		if (s[i] == '-')
+			p *= -1;
 
-	while ((s[l] < 48 || s[l] > 57) && (l <= i))
-	{
-		l++;
-	}
-	if ((s[l] < 48 || s[l] > 57) && (l == i))
-	{
-		return (0);
-	}
-	for (j = 0; j < l; j++)
-	{
-		if (s[j] == 45)
+		if (s[i] > 47 && s[i] < 58)
 		{
-			k = k * (-1);
+			if (h < 0)
+				h = (h * 10) - (s[i] - '0');
+			else
+				h = (s[i] - '0') * -1;
+
+			if (s[i + 1] < 48 || s[i + 1] > 57)
+				break;
 		}
 	}
-	while (s[l] >= 48 && s[l] <= 57 && l < i)
-	{
-		numb = (numb * 10) + (s[l] - '0');
-		l++;
-	}
-	return (k * numb);
+	if (p < 0)
+		h *= -1;
+
+	return (h);
 }
