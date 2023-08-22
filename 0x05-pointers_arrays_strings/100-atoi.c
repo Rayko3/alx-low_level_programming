@@ -19,13 +19,6 @@ int _atoi(char *s)
 		i++;
 	}
 
-	for (j = 0; j < i; j++)
-	{
-		if (s[j] == 45)
-		{
-			k = k * (-1);
-		}
-	}
 	while ((s[l] < 48 || s[l] > 57) && (l <= i))
 	{
 		l++;
@@ -34,7 +27,14 @@ int _atoi(char *s)
 	{
 		return (0);
 	}
-	while (s[l] >= 48 && s[l] <= 57)
+	for (j = 0; j < l; j++)
+	{
+		if (s[j] == 45)
+		{
+			k = k * (-1);
+		}
+	}
+	while (s[l] >= 48 && s[l] <= 57 && l < i)
 	{
 		numb = (numb * 10) + (s[l] - '0');
 		l++;
