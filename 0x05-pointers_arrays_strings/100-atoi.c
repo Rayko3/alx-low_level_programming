@@ -12,7 +12,6 @@ int _atoi(char *s)
 	int i = 0;
 	int j;
 	int l = 0;
-	int p = 0;
 	int numb = 0;
 
 	while (s[i] != '\0')
@@ -37,9 +36,9 @@ int _atoi(char *s)
 	}
 	while (s[l] >= 48 && s[l] <= 57)
 	{
-		numb = numb + (s[l] * (10 * *p));
+		numb = (numb * 10) + s[l];
 		l++;
 		p++;
 	}
-	return (numb);
+	return (k * numb);
 }
