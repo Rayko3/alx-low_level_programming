@@ -36,7 +36,7 @@ int _atoi(char *s)
 	}
 	while (s[l] >= 48 && s[l] <= 57)
 	{
-		numb = (numb * 10) + s[l];
+		numb = (numb * 10) + (s[l] - '0');
 		l++;
 	}
 	return (k * numb);
