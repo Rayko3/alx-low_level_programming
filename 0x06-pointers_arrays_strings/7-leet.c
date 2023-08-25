@@ -3,8 +3,8 @@
 
 /**
  * leet - encode a string into 1337
- * @s: string
- * Return: encoded string `s`
+ * @str: string
+ * Return: encoded string `str`
  */
 
 char *leet(char *str)
