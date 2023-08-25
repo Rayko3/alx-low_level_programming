@@ -2,7 +2,7 @@
 
 /**
  *cap_string - capitalizes all words of a string
- *@s : pointer to a string
+ *@str : pointer to a string
  *Return: all the words of the string capitalized
  */
 
