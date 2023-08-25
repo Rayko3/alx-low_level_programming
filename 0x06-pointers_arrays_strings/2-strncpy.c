@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- *_strncp - coppy a string up to n bytes
+ *_strncpy - coppy a string up to n bytes
  **@dest : pointer to a string
  *@src : pointer to a string
  *@n : an integer
  *Return: pointer to a string
  */
 
-char *_strncp(char *dest, char *src, int n)
+char *_strncpy(char *dest, char *src, int n)
 {
 	int j = 0;
 
