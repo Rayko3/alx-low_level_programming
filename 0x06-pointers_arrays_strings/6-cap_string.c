@@ -7,7 +7,7 @@
  */
 
 
-char *cap_string(char *s)
+char *cap_string(char *str)
 {
 	int i, c;
 	int trigger;
