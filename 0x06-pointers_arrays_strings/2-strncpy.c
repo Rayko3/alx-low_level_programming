@@ -18,9 +18,6 @@ char *_strncp(char *dest, char *src, int n)
 		dest[j] = src[j];
 		j++;
 	}
-	if (j < n && src[j] == '\0')
-	{
-		dest[j] = src[j];
-	}
+	dest[j] = '\0'
 	return (dest);
 }
