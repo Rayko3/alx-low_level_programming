@@ -17,12 +17,10 @@ int _strcmp(char *s1, char *s2)
 	{
 		i++;
 	}
-
 	while (s2[j] != '\0')
 	{
 		j++;
 	}
-
 	if (i > j)
 	{
 		return (15);
