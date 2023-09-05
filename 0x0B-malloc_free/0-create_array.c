@@ -13,11 +13,11 @@ char *create_array(unsigned int size, char c)
 {
 	char *ar;
 
-	if (n == 0)
+	if (size == 0)
 	{
 		return ('NULL');
 	}
-	ar = malloc(n * sizeof(char));
+	ar = malloc(size * sizeof(char));
 	ar[0] = c;
 	return (ar);
 }
