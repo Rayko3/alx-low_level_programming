@@ -9,3 +9,13 @@ void print_name(char *name, void (*f)(char *))
 {
 	f(name);
 }
+
+/**
+ *main - make sure the rogramme work
+ *Return: 0 always true
+ */
+
+int main(void)
+{
+	return (0);
+}
